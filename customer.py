@@ -17,7 +17,7 @@ class Customer:
         return name
 
     def create_order(self, coffee, price):
-        order = Order(self, coffee, price)
+        order = order(self, coffee, price)  # Ensure 'Order' is defined elsewhere
         self.orders_list.append(order)
         coffee.add_order(order)
 
